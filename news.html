@@ -3,14 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Latest news and updates from Patria Composite — manufacturer of Type IV CNG and Hydrogen pressure vessels based in Samobor, Croatia.">
+  <meta name="description" content="News and press coverage from Patria Composite — manufacturer of Type IV Hydrogen and CNG pressure vessels. Read about our latest projects, partnerships and media appearances.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.patriacomposite.hr/news">
-  <title>News – Patria Composite</title>
+  <title>News & Press – Patria Composite</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .news-tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
+    }
+    .news-tag--project  { background: rgba(13,100,5,0.08);  color: var(--green-dark); }
+    .news-tag--press    { background: rgba(70,180,0,0.1);   color: #2a7a00; }
+    .news-tag--eu       { background: rgba(0,80,160,0.08);  color: #004da0; }
+    .news-tag--event    { background: rgba(120,60,0,0.08);  color: #7a3c00; }
+
+    .news-article {
+      background: var(--white);
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: var(--radius-md);
+      padding: 40px;
+      transition: box-shadow var(--transition), transform var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+    .news-article:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .news-article time {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-light);
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+    }
+    .news-article h2 { font-size: 1.25rem; margin-bottom: 14px; line-height: 1.35; }
+    .news-article p  { font-size: 0.93rem; color: var(--text-mid); flex-grow: 1; }
+    .news-article .card-link { margin-top: 20px; }
+
+    .news-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    @media (max-width: 768px) { .news-list { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
 
@@ -43,9 +88,9 @@
       </div>
       <div class="container">
         <div class="page-hero-content">
-          <span class="page-hero-label">Latest updates</span>
-          <h1>Company <strong>News</strong></h1>
-          <p>Stay up to date with the latest news, projects and developments from Patria Composite.</p>
+          <span class="page-hero-label">Updates & press</span>
+          <h1>News <strong>&amp; Press</strong></h1>
+          <p>Stay up to date with our latest projects, EU-funded initiatives, media appearances and industry news.</p>
         </div>
       </div>
     </section>
@@ -55,31 +100,31 @@
         <div class="news-list">
 
           <article class="news-article aos" aria-labelledby="news-1-heading">
-            <time datetime="2024-10-21" class="news-date">21. 10. 2024.</time>
-            <h2 id="news-1-heading">Jačanje kibernetičke otpornosti tvrtke Patria composite d.o.o.</h2>
-            <p>Naziv projekta: Jačanje kibernetičke otpornosti tvrtke Patria composite d.o.o.</p>
-            <p>Šifra projekta: NPOO.C1.1.2.R3-I2.01-V4.0128</p>
-            <p>Ovim projektom tvrtka Patria Composite ulaže u jačanje svoje kibernetičke sigurnosti, u skladu s Nacionalnim planom oporavka i otpornosti.</p>
-            <a href="contact.html" class="card-link" style="margin-top:20px;">More info →</a>
+            <span class="news-tag news-tag--eu">EU Project</span>
+            <time datetime="2024-10-21">21. 10. 2024.</time>
+            <h2 id="news-1-heading">Jačanje kibernetičke otpornosti tvrtke Patria Composite d.o.o.</h2>
+            <p>Naziv projekta: Jačanje kibernetičke otpornosti tvrtke Patria composite d.o.o. Šifra projekta: NPOO.C1.1.2.R3-I2.01-V4.0128. Ovim projektom tvrtka ulaže u jačanje svoje kibernetičke sigurnosti u skladu s Nacionalnim planom oporavka i otpornosti.</p>
+            <a href="contact.html" class="card-link">More info →</a>
           </article>
 
           <article class="news-article aos" aria-labelledby="news-2-heading">
-            <time datetime="2023-09-07" class="news-date">07. 09. 2023.</time>
+            <span class="news-tag news-tag--project">R&amp;D Project</span>
+            <time datetime="2023-09-07">07. 09. 2023.</time>
             <h2 id="news-2-heading">Razvoj hidrogenskih boca</h2>
-            <p>Provedbom projekta će se razviti boca koja ima dodatnu redukciju težine u odnosu na standardne boce tipa 1 za čak 75% te u odnosu na boce tipa 4 za 30%.</p>
-            <p>This development marks a significant step forward in our hydrogen cylinder programme, bringing us closer to delivering next-generation H2 pressure vessels to market.</p>
-            <a href="contact.html" class="card-link" style="margin-top:20px;">More info →</a>
+            <p>Provedbom projekta razvit će se boca s dodatnom redukcijom težine u odnosu na standardne boce tipa 1 za čak 75%, te u odnosu na boce tipa 4 za 30%. A significant step forward in our Hydrogen cylinder programme.</p>
+            <a href="contact.html" class="card-link">More info →</a>
           </article>
 
         </div>
-      </div>
-    </section>
 
-    <section class="section section--cta" aria-label="Newsletter / contact CTA">
-      <div class="container cta-content">
-        <h2>Want to stay informed?</h2>
-        <p>Reach out to us and we'll keep you updated on our latest developments.</p>
-        <a href="contact.html" class="btn btn--primary btn--large">Contact Us</a>
+        <!-- PRESS CONTACT -->
+        <div style="margin-top:56px; padding:48px; background:var(--cream); border-radius:var(--radius-lg); text-align:center;" class="aos">
+          <span class="section-label">Press & media</span>
+          <h3 style="font-size:1.5rem; margin:12px 0 16px;">Media enquiries</h3>
+          <p style="max-width:500px; margin:0 auto 28px;">Journalists, analysts and media professionals — for press kits, interviews or background information, please get in touch.</p>
+          <a href="contact.html" class="btn btn--primary">Contact us</a>
+        </div>
+
       </div>
     </section>
 
@@ -90,7 +135,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="images/logof2.png" alt="Patria Composite" class="footer-logo">
-          <p>Bespoke manufacturer of Type IV pressure vessels for CNG and Hydrogen.</p>
+          <p>Bespoke manufacturer of Type IV pressure vessels for Hydrogen and CNG.</p>
           <p class="footer-slogan">FUELED BY NATURE.</p>
         </div>
         <nav class="footer-nav" aria-label="Footer navigation">
