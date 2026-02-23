@@ -928,8 +928,8 @@ p  { color: var(--text-mid); line-height: 1.7; }
    AOS (simple fade-in animation)
    ============================================ */
 .aos {
-  opacity: 0;
-  transform: translateY(24px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .aos.visible {
