@@ -169,7 +169,7 @@ p  { color: var(--text-mid); line-height: 1.7; }
   flex-shrink: 0;
 }
 .site-logo, .nav-logo img {
-  height: 44px;
+  height: 60px;
   width: auto;
   object-fit: contain;
 }
